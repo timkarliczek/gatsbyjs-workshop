@@ -1,0 +1,35 @@
+{
+  "name": "gatsbyjs-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:timkarliczek/gatsbyjs-workshop.git",
+  "author": "Tim Karliczek <timkarliczek@gmail.com>",
+  "scripts": {
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "build": "cross-env gatsby build",
+    "analyze": "ANALYZE_BUNDLE_SIZE=true gatsby build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.20.23",
+    "gatsby-image": "^2.3.3",
+    "gatsby-plugin-mdx": "^1.1.9",
+    "gatsby-plugin-react-helmet": "^3.2.3",
+    "gatsby-plugin-sass": "^2.2.2",
+    "gatsby-plugin-sharp": "^2.5.5",
+    "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
+    "gatsby-remark-images": "^3.2.4",
+    "gatsby-source-contentful": "^2.2.9",
+    "gatsby-source-filesystem": "^2.2.3",
+    "gatsby-transformer-sharp": "^2.4.5",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0"
+  }
+}

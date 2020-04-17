@@ -1,0 +1,35 @@
+.post-preview {
+  background-color: $c-white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow:
+    0 2px 5.3px rgba(0, 0, 0, 0.028),
+    0 6.7px 17.9px rgba(0, 0, 0, 0.042),
+    0 30px 80px rgba(0, 0, 0, 0.07)
+  ;
+
+  h2 a {
+    @include text-gradient;
+
+    text-decoration: none;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  small {
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  a {
+    display: block;
+
+    &:hover {
+      @include text-gradient;
+    }
+  }
+}

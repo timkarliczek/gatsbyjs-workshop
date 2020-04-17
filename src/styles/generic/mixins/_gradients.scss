@@ -1,0 +1,45 @@
+@mixin text-gradient($deg: 90deg) {
+  color: $c-green;
+
+  @supports (-webkit-text-fill-color: transparent) {
+    background: rgb(123, 203, 120);
+    background: -moz-linear-gradient(
+                    $deg,
+                    rgba(123, 203, 120, 1) 0%,
+                    rgba(182, 230, 139, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+                    $deg,
+                    rgba(123, 203, 120, 1) 0%,
+                    rgba(182, 230, 139, 1) 100%
+    );
+    background: linear-gradient(
+                    $deg,
+                    rgba(123, 203, 120, 1) 0%,
+                    rgba(182, 230, 139, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+}
+
+@mixin background-gradient($deg: 90deg) {
+  background: rgb(123, 203, 120);
+  background: -moz-linear-gradient(
+                  $deg,
+                  rgba(123, 203, 120, 1) 0%,
+                  rgba(182, 230, 139, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+                  $deg,
+                  rgba(123, 203, 120, 1) 0%,
+                  rgba(182, 230, 139, 1) 100%
+  );
+  background: linear-gradient(
+                  $deg,
+                  rgba(123, 203, 120, 1) 0%,
+                  rgba(182, 230, 139, 1) 100%
+  );
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#{$c-green}',endColorstr='#{$c-green-light}',GradientType=1);
+}

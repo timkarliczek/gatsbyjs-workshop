@@ -1,0 +1,18 @@
+html {
+  color: $c-black;
+  font-weight: $f-weight-regular;
+  font-size: $f-size;
+  font-family: $f-family;
+  line-height: 1.4;
+  background-color: $c-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include mq(small) {
+    font-size: $f-size-mobile;
+  }
+}
+
+main {
+  @include container-medium;
+}

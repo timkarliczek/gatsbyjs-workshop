@@ -1,0 +1,8 @@
+.map {
+  @include container-medium;
+  @include module-space;
+}
+
+.leaflet-container {
+  height: 350px;
+}

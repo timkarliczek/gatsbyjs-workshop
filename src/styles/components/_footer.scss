@@ -1,0 +1,13 @@
+.footer {
+  @include module-space;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $c-black;
+
+  &__inner {
+    @include container-medium;
+
+    color: $c-white;
+  }
+}
